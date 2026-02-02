@@ -1,0 +1,6 @@
+{"user_id": "u-101", "event": "login", "status": "success", "ip": "192.168.1.5", "timestamp": "2024-01-24T10:00:00Z"}
+{"user_id": "u-102", "event": "checkout", "status": "success", "ip": "192.168.1.12", "timestamp": "2024-01-24T10:05:00Z"}
+{"user_id": "u-101", "event": "login", "status": "fail", "ip": "45.33.22.11", "timestamp": "2024-01-24T10:15:00Z"}
+{"user_id": "u-103", "event": "login", "status": "success", "ip": "192.168.1.20", "timestamp": "2024-01-24T10:20:00Z"}
+{"user_id": "u-104", "event": "logout", "status": "success", "ip": "192.168.1.35", "timestamp": "2024-01-24T10:30:00Z"}
+{"user_id": "u-101", "event": "login", "status": "fail", "ip": "45.33.22.11", "timestamp": "2024-01-24T10:35:00Z"}
