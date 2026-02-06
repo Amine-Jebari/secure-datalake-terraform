@@ -185,6 +185,7 @@ resource "aws_s3_bucket_public_access_block" "athena_results_access" {
 # Athena Workgroup (The Configuration)
 resource "aws_athena_workgroup" "datalake_workgroup" {
   name = "datalake-workgroup"
+  force_destroy = true
 
   configuration {
     result_configuration {
@@ -201,9 +202,9 @@ resource "aws_athena_workgroup" "datalake_workgroup" {
 # Upload the Python script to the RAW bucket
 resource "aws_s3_object" "etl_script" {
   bucket = aws_s3_bucket.raw_data.id
-  key    = "scripts/etl_script.py" # It will be stored in a 'scripts' folder
-  source = "etl_script.py"         # The local file you just created
-  etag   = filemd5("etl_script.py") # Triggers update if you change the script
+  key    = "scripts/etl_script.py" 
+  source = "etl_script.py"         
+  etag   = filemd5("etl_script.py") 
 }
 
 # Create the Glue Job
